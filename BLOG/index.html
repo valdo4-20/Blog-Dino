@@ -50,6 +50,50 @@
             </div>
         </div>
     </div>
+    
+    <!-- Círculo de Perfil -->
+<div id="profileCircle" class="profile-circle" onclick="toggleProfileModal()"></div>
+
+<!-- Modal de Perfil -->
+<div id="profileModal" class="modal hidden">
+    <div class="modal-content" style="width: 500px;"> <!-- Aumente a largura aqui -->
+        <span id="closeProfileModal" class="close" onclick="toggleProfileModal()">&times;</span>
+        
+        <div class="cover-photo">
+            <label for="coverPicInput">
+                <img id="coverPic" src="default-cover.jpg" alt="Capa" />
+                <button class="edit-button">Editar Capa</button>
+            </label>
+            <input type="file" id="coverPicInput" accept="image/*" onchange="changeCoverPic(event)" style="display:none" />
+        </div>
+        
+        <div class="profile-info">
+            <div class="profile-pic">
+                <label for="profilePicInput">
+                    <img id="profilePic" src="default-profile.jpg" alt="Perfil" />
+                    <button class="edit-button">Editar Perfil</button>
+                </label>
+                <input type="file" id="profilePicInput" accept="image/*" onchange="changeProfilePic(event)" style="display:none" />
+            </div>
+
+            <h2 id="nameDisplay">Nome do Usuário</h2>
+            <p id="bioDisplay">Biografia do usuário</p>
+            <p>Posts feitos: <span id="postCount">0</span></p>
+        </div>
+
+        <div class="profile-edit">
+            <input type="text" id="nameInput" placeholder="Nome" />
+            <input type="date" id="dobInput" />
+            <textarea id="bioInput" placeholder="Biografia"></textarea>
+            <button id="updateProfile">Atualizar Perfil</button>
+        </div>
+    </div>
+</div>
+
+
+<!-- Relógio Analógico -->
+<div id="clock" class="clock"></div>
+
 
     <script src="script.js"></script>
 </body>
