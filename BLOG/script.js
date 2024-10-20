@@ -81,3 +81,49 @@ scrollBtn.addEventListener("click", () => {
     document.body.scrollTop = 0; // Para Safari
     document.documentElement.scrollTop = 0; // Para outros navegadores
 });
+
+// Função para alternar o modal do perfil
+const toggleProfileModal = () => {
+    const profileModal = document.getElementById("profileModal");
+    profileModal.classList.toggle("hidden");
+    profileModal.classList.toggle("show");
+};
+
+// Relógio Analógico
+const updateClock = () => {
+    const now = new Date();
+    const clock = document.getElementById("clock");
+    clock.textContent = now.toLocaleTimeString(); // Formato de hora padrão
+};
+
+// Atualiza o relógio a cada segundo
+setInterval(updateClock, 1000);
+updateClock(); // Chama imediatamente para não esperar 1 segundo
+
+// Função para mudar a foto de perfil
+const changeProfilePic = (event) => {
+    const file = event.target.files[0];
+    const profilePic = document.getElementById("profilePic");
+    
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            profilePic.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+};
+
+// Função para mudar a foto de capa
+const changeCoverPic = (event) => {
+    const file = event.target.files[0];
+    const coverPic = document.getElementById("coverPic");
+    
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = (e) => {
+            coverPic.src = e.target.result;
+        };
+        reader.readAsDataURL(file);
+    }
+};
