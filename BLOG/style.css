@@ -211,3 +211,167 @@ button:hover {
     right: 20px;
     display: none;
 }
+.profile-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #1DA1F2; /* Cor do círculo */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #333; /* Cor escura dos botões */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555; /* Cor mais clara ao passar o mouse */
+}
+
+.clock {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.profile-pictures {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.profile-pic, .cover-pic {
+    width: 45%;
+    text-align: center;
+}
+
+.profile-pic img, .cover-pic img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Cantos arredondados */
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.cover-photo {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.edit-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.profile-info {
+    text-align: center;
+    margin-top: -50px; /* Para sobrepor a imagem de perfil */
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-edit {
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="date"], textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.edit-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.5); /* Transparente */
+    border: none;
+    border-radius: 15px; /* Cantos arredondados */
+    padding: 5px 10px;
+    cursor: pointer;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px); /* Efeito de borrado */
+    transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+    background-color: rgba(255, 255, 255, 0.7); /* Efeito ao passar o mouse */
+}
+
+.cover-photo {
+    position: relative;
+    height: 200px;
+    overflow: hidden;
+}
+
+.cover-photo img {
+    width: 100%;
+    height: auto;
+}
+
+.profile-pic {
+    position: relative;
+    margin-top: -50px; /* Para sobrepor a imagem de perfil */
+}
+
+.profile-pic img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
