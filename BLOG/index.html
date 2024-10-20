@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dino Diário</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Barra Lateral Esquerda -->
+    <aside class="sidebar">
+        <div class="logo">
+            🦕 <!-- Emoji do Dino -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Terra</a></li>
+                <li><a href="#">Notificações</a></li>
+                <li><a href="#">Mensagens</a></li>
+                <li><a href="#">Perfil</a></li>
+                <li><button id="tudoBemBtn">Tudo bem?</button></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo Principal -->
+    <section class="main-content">
+        <!-- Container de Últimas Publicações -->
+        <div class="recent-posts">
+            <h2>Últimas Publicações</h2>
+            <div id="feed">
+                <!-- Aqui as postagens aparecerão -->
+            </div>
+        </div>
+
+        <button id="scrollBtn">Rolar para o topo</button>
+    </section>
+
+    <!-- Modal de Postagem -->
+    <div id="postModal" class="modal hidden">
+        <div class="modal-content">
+            <span id="closeModal" class="close">&times;</span>
+            <h2>O que está acontecendo?</h2>
+            <textarea id="postContent" placeholder="Escreva algo..."></textarea>
+            <div class="post-options">
+                <button id="postButton">Pode falar</button>
+                <button id="addImage">📷 Imagem</button>
+                <button id="addGif">🎞️ GIF</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
